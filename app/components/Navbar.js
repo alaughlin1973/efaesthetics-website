@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import Image from "next/image";
 import Link from "next/link";
 
 export default function Navbar() {
@@ -7,7 +8,16 @@ export default function Navbar() {
 
   return (
     <nav className="nav">
-      <h2>EF Aesthetics</h2>
+
+      <Link href="/">
+        <Image
+          src="/logo.png"
+          alt="EF Aesthetics"
+          width={120}
+          height={60}
+          className="logo"
+        />
+      </Link>
 
       <div className={`nav-links ${open ? "show" : ""}`}>
         <Link href="/">Home</Link>
@@ -24,4 +34,5 @@ export default function Navbar() {
     </nav>
   );
 }
+
 

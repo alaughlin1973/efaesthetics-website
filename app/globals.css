@@ -29,6 +29,10 @@ body {
   gap: 20px;
 }
 
+.logo {
+  object-fit: contain;
+}
+
 .card {
   background: white;
   padding: 20px;
@@ -142,6 +146,11 @@ body {
   .gallery-grid {
     display: grid;
     grid-template-columns: 1fr;
+  }
+
+  .logo {
+    width: 90px;
+    height: auto;
   }
 
   .treatment h2 {
