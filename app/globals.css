@@ -1,0 +1,30 @@
+body {
+  margin: 0;
+  background: #F8F6F2;
+  color: #1A1A1A;
+  font-family: sans-serif;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+}
+
+.grid {
+  display: flex;
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.btn {
+  background: #C6A75E;
+  color: white;
+  padding: 12px 25px;
+  text-decoration: none;
+}
