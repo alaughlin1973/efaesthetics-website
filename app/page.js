@@ -3,7 +3,7 @@ export default function Home() {
     <main className="hero">
 
       <Image
-        src="/logo.png"
+        src="/logo1.png"
         alt="EF Aesthetics"
         width={500}
         height={250}
