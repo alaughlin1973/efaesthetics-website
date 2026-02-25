@@ -15,7 +15,7 @@ export default function Contact() {
 
       <div className="map">
         <iframe
-          src="https://www.google.com/maps?q=Calle+Alemania+1,+Torreón+Golf+Centro,+29630&output=embed"
+          src="https://www.google.com/maps?q=Calle+Alemania+1,+29630&output=embed"
           width="100%"
           height="350"
           style={{ border: 0 }}
