@@ -8,7 +8,20 @@ body {
 .nav {
   display: flex;
   justify-content: space-between;
-  padding: 20px 40px;
+  align-items: center;
+  padding: 20px;
+}
+
+.nav-links a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #1A1A1A;
+}
+
+.menu-btn {
+  display: none;
+  font-size: 26px;
+  cursor: pointer;
 }
 
 .grid {
@@ -28,3 +41,125 @@ body {
   padding: 12px 25px;
   text-decoration: none;
 }
+
+.whatsapp-float {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  background: #C6A75E;
+  color: white;
+  padding: 12px 18px;
+  border-radius: 50px;
+  font-size: 14px;
+  z-index: 999;
+}
+
+.page {
+  padding: 80px 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.contact-info {
+  margin-bottom: 40px;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.map {
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.treatment {
+  margin-bottom: 60px;
+  border-bottom: 1px solid #E6D3A3;
+  padding-bottom: 40px;
+}
+
+.treatment h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.cta-section {
+  margin-top: 40px;
+}
+
+.btn-gold {
+  background: #C6A75E;
+  color: white;
+  padding: 14px 30px;
+  text-decoration: none;
+  border-radius: 30px;
+  transition: 0.3s ease;
+}
+
+.btn-gold:hover {
+  background: #b8964f;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.gallery-item {
+  background: #EEEAE4;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+
+  .menu-btn {
+    display: block;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background: white;
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .nav-links a {
+    margin: 10px 0;
+  }
+
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .treatment h2 {
+    font-size: 22px;
+  }
+
+  .page {
+    padding: 40px 20px;
+  }
+
+  .btn-gold {
+    display: block;
+    text-align: center;
+    width: 100%;	
+  }
+
+
+
+}
+
+

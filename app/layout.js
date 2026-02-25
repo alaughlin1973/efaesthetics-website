@@ -5,6 +5,8 @@ export const metadata = {
 
 import './globals.css'
 import Navbar from './components/Navbar'
+import WhatsAppButton from './components/WhatsAppButton'
+import Footer from './components/Footer'
 
 export default function RootLayout({ children }) {
   return (
@@ -12,6 +14,8 @@ export default function RootLayout({ children }) {
       <body>
 	<Navbar />
         {children}
+	<WhatsAppButton />
+	<Footer />
       </body>
     </html>
   );
